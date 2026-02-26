@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-studiodeep"
-version = "0.1.0"
+version = "0.1.1"
 description = "StudioDeep nodes for ComfyUI — AI-assisted text-to-video prompt building and LLM/N8N backend integration."
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
