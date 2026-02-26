@@ -17,6 +17,4 @@ jobs:
       - name: Install comfy-cli
         run: pip install comfy-cli
       - name: Publish node
-        run: comfy node publish
-        env:
-          REGISTRY_ACCESS_TOKEN: ${{ secrets.REGISTRY_ACCESS_TOKEN }}
+        run: comfy --skip-prompt node publish --token ${{ secrets.REGISTRY_ACCESS_TOKEN }}
