@@ -1,0 +1,15 @@
+# API keys — never commit
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Dev tools
+.claude/
+
+# OS
+.DS_Store

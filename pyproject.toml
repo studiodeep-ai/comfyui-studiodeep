@@ -1,0 +1,20 @@
+[project]
+name = "comfyui-studiodeep"
+version = "0.1.0"
+description = "StudioDeep nodes for ComfyUI — AI-assisted text-to-video prompt building and LLM/N8N backend integration."
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+    "anthropic",
+    "openai",
+    "requests",
+    "python-dotenv",
+]
+
+[project.urls]
+Repository = "https://github.com/studiodeep-ai/comfyui-studiodeep"
+
+[tool.comfy]
+PublisherId = ""       # fill in after signing up at registry.comfy.org
+DisplayName = "StudioDeep"
+Icon = ""
