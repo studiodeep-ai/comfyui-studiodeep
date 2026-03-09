@@ -247,20 +247,36 @@ class SD_T2VPromptBuilder:
             raw = self._call_openai(backend, SYSTEM_PROMPT_ENHANCE_ONLY, assembled_prompt)
         return raw.strip()
 
+    # budget_tokens for Claude extended thinking per effort level
+    _CLAUDE_THINKING_BUDGET = {"low": 1024, "medium": 5000, "high": 16000}
+
     def _call_claude(self, backend, system, user_msg):
         try:
             import anthropic
         except ImportError:
             raise ImportError("anthropic package not installed — run: pip install anthropic")
 
+        reasoning = backend.get("reasoning", "off")
+        kwargs = {
+            "model":    backend["model"],
+            "system":   system,
+            "messages": [{"role": "user", "content": user_msg}],
+        }
+
+        if reasoning != "off":
+            budget = self._CLAUDE_THINKING_BUDGET[reasoning]
+            kwargs["thinking"]   = {"type": "enabled", "budget_tokens": budget}
+            kwargs["max_tokens"] = budget + 512
+        else:
+            kwargs["max_tokens"] = 512
+
         client   = anthropic.Anthropic(api_key=backend["api_key"])
-        response = client.messages.create(
-            model=backend["model"],
-            max_tokens=512,
-            system=system,
-            messages=[{"role": "user", "content": user_msg}],
-        )
-        return response.content[0].text
+        response = client.messages.create(**kwargs)
+        # extended thinking returns multiple content blocks; find the text one
+        for block in response.content:
+            if block.type == "text":
+                return block.text
+        return ""
 
     def _call_openai(self, backend, system, user_msg):
         try:
@@ -268,15 +284,22 @@ class SD_T2VPromptBuilder:
         except ImportError:
             raise ImportError("openai package not installed — run: pip install openai")
 
-        client   = OpenAI(api_key=backend["api_key"])
-        response = client.chat.completions.create(
-            model=backend["model"],
-            max_tokens=512,
-            messages=[
+        reasoning = backend.get("reasoning", "off")
+        kwargs = {
+            "model":    backend["model"],
+            "messages": [
                 {"role": "system", "content": system},
                 {"role": "user",   "content": user_msg},
             ],
-        )
+        }
+
+        if reasoning != "off":
+            kwargs["reasoning_effort"] = reasoning
+        else:
+            kwargs["max_tokens"] = 512
+
+        client   = OpenAI(api_key=backend["api_key"])
+        response = client.chat.completions.create(**kwargs)
         return response.choices[0].message.content
 
     # ------------------------------------------------------------------

@@ -1,25 +1,31 @@
-import os
-from pathlib import Path
+CLAUDE_MODELS = [
+    "claude-opus-4-6",
+    "claude-sonnet-4-6",
+    "claude-haiku-4-5-20251001",
+]
 
-try:
-    from dotenv import load_dotenv
-    load_dotenv(Path(__file__).parent.parent / ".env")
-except ImportError:
-    pass  # fall back to os.environ
+OPENAI_MODELS = [
+    "gpt-5o",
+    "gpt-5o-mini",
+]
 
-CLAUDE_DEFAULT_MODEL = "claude-sonnet-4-6"
-OPENAI_DEFAULT_MODEL = "gpt-4o"
+ALL_MODELS = CLAUDE_MODELS + OPENAI_MODELS
 
 
 class SD_LLMBackend:
     CATEGORY = "StudioDeep/Backends"
 
+    # budget_tokens for Claude extended thinking per effort level
+    CLAUDE_THINKING_BUDGET = {"low": 1024, "medium": 5000, "high": 16000}
+
     @classmethod
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "provider": (["Claude", "OpenAI"],),
-                "model": ("STRING", {"default": CLAUDE_DEFAULT_MODEL}),
+                "provider":  (["Claude", "OpenAI"],),
+                "model":     (ALL_MODELS, {"default": CLAUDE_MODELS[1]}),
+                "reasoning": (["off", "low", "medium", "high"], {"default": "off"}),
+                "api_key":   ("STRING", {"default": "", "password": True}),
             }
         }
 
@@ -27,25 +33,11 @@ class SD_LLMBackend:
     RETURN_NAMES = ("backend",)
     FUNCTION = "build"
 
-    def build(self, provider, model):
-        defaults = {
-            "Claude": CLAUDE_DEFAULT_MODEL,
-            "OpenAI": OPENAI_DEFAULT_MODEL,
-        }
-        # Auto-correct model when user switches provider without updating the field
-        if not model or model in (CLAUDE_DEFAULT_MODEL, OPENAI_DEFAULT_MODEL):
-            model = defaults[provider]
-
-        if provider == "Claude":
-            api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-            if not api_key:
-                raise ValueError("ANTHROPIC_API_KEY not found — add it to StudioDeep/.env")
-            return ({"type": "claude", "model": model, "api_key": api_key},)
-
-        api_key = os.environ.get("OPENAI_API_KEY", "")
+    def build(self, provider, model, api_key, reasoning="off"):
         if not api_key:
-            raise ValueError("OPENAI_API_KEY not found — add it to StudioDeep/.env")
-        return ({"type": "openai", "model": model, "api_key": api_key},)
+            raise ValueError(f"API key is required — enter your {'Anthropic' if provider == 'Claude' else 'OpenAI'} API key in the node.")
+
+        return ({"type": "claude" if provider == "Claude" else "openai", "model": model, "api_key": api_key, "reasoning": reasoning},)
 
 
 NODE_CLASS_MAPPINGS = {

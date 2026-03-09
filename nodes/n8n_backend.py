@@ -6,6 +6,8 @@ class SD_N8NBackend:
         return {
             "required": {
                 "webhook_url": ("STRING", {"default": "https://your-n8n-instance.com/webhook/..."}),
+                "username":    ("STRING", {"default": ""}),
+                "password":    ("STRING", {"default": "", "password": True}),
             }
         }
 
@@ -13,8 +15,8 @@ class SD_N8NBackend:
     RETURN_NAMES = ("backend",)
     FUNCTION = "build"
 
-    def build(self, webhook_url):
-        return ({"type": "n8n", "webhook_url": webhook_url},)
+    def build(self, webhook_url, username, password):
+        return ({"type": "n8n", "webhook_url": webhook_url, "username": username, "password": password},)
 
 
 NODE_CLASS_MAPPINGS = {
