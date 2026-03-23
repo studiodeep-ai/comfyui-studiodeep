@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-studiodeep"
-version = "0.1.5"
+version = "0.1.6"
 description = "Custom Nodes for Creative Engineering in ComfyUI at Studio Deep (Freelance Generative AI Engineer)"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
