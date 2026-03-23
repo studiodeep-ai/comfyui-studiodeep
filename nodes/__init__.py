@@ -7,6 +7,11 @@ from .json_shot_splitter import NODE_CLASS_MAPPINGS as _json_c,  NODE_DISPLAY_NA
 from .string_passthrough import NODE_CLASS_MAPPINGS as _sp_c,    NODE_DISPLAY_NAME_MAPPINGS as _sp_d
 from .compositor_3_916          import NODE_CLASS_MAPPINGS as _comp_c,  NODE_DISPLAY_NAME_MAPPINGS as _comp_d
 from .image_prompt_by_seed_idea import NODE_CLASS_MAPPINGS as _seed_c,  NODE_DISPLAY_NAME_MAPPINGS as _seed_d
+from .image_analyzer            import NODE_CLASS_MAPPINGS as _n8n_ia_c, NODE_DISPLAY_NAME_MAPPINGS as _n8n_ia_d
+from .template_image            import NODE_CLASS_MAPPINGS as _tmpl_c,   NODE_DISPLAY_NAME_MAPPINGS as _tmpl_d
+from .prompt_ingredient         import NODE_CLASS_MAPPINGS as _pi_c,     NODE_DISPLAY_NAME_MAPPINGS as _pi_d
+from .string_template           import NODE_CLASS_MAPPINGS as _st_c,     NODE_DISPLAY_NAME_MAPPINGS as _st_d
+from .story_panel               import NODE_CLASS_MAPPINGS as _stp_c,    NODE_DISPLAY_NAME_MAPPINGS as _stp_d
 
 NODE_CLASS_MAPPINGS = {
     **_llm_c,
@@ -18,6 +23,11 @@ NODE_CLASS_MAPPINGS = {
     **_sp_c,
     **_comp_c,
     **_seed_c,
+    **_n8n_ia_c,
+    **_tmpl_c,
+    **_pi_c,
+    **_st_c,
+    **_stp_c,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -30,4 +40,9 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     **_sp_d,
     **_comp_d,
     **_seed_d,
+    **_n8n_ia_d,
+    **_tmpl_d,
+    **_pi_d,
+    **_st_d,
+    **_stp_d,
 }

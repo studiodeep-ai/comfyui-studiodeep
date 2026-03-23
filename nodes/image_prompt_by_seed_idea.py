@@ -1,7 +1,7 @@
 import requests
 
-MODEL_LABELS = ["Nano Banana"]
-MODEL_VALUES  = {"Nano Banana": "nano-banana"}
+MODEL_LABELS = ["GenHQ (Universal)", "Nano Banana"]
+MODEL_VALUES  = {"GenHQ (Universal)": "genhq-universal", "Nano Banana": "nano-banana"}
 
 class SD_ImagePromptBySeedIdea:
     CATEGORY = "StudioDeep"

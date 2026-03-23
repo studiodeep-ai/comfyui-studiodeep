@@ -1,0 +1,14 @@
+{
+  "label": "Lens",
+  "ingredients": [
+    { "title": "14mm Ultra-Wide",   "prompt": "14mm ultra-wide angle lens, extreme deep depth of field, slight distortion" },
+    { "title": "24mm Wide",         "prompt": "24mm wide-angle lens, deep depth of field" },
+    { "title": "35mm Wide",         "prompt": "35mm wide-angle lens, f/4, deep depth of field" },
+    { "title": "50mm Standard",     "prompt": "50mm standard lens, f/2.8, natural perspective" },
+    { "title": "85mm Portrait",     "prompt": "85mm portrait lens, f/1.8, shallow depth of field, soft background bokeh" },
+    { "title": "135mm Telephoto",   "prompt": "135mm telephoto lens, f/2, very shallow depth of field, compressed perspective" },
+    { "title": "200mm Telephoto",   "prompt": "200mm telephoto lens, heavy background compression, subject isolation" },
+    { "title": "Macro",             "prompt": "macro lens, extreme close focus, razor-thin depth of field" },
+    { "title": "Fisheye",           "prompt": "fisheye lens, 8mm, strong barrel distortion, 180-degree field of view" }
+  ]
+}

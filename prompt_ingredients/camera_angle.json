@@ -1,0 +1,14 @@
+{
+  "label": "Camera Angle",
+  "ingredients": [
+    { "title": "Eye-Level Front",         "prompt": "eye-level front view" },
+    { "title": "Eye-Level Three-Quarter", "prompt": "eye-level three-quarter angle" },
+    { "title": "Side Profile",            "prompt": "eye-level side profile" },
+    { "title": "Low Angle",               "prompt": "low angle looking up, slightly below eye-level" },
+    { "title": "High Angle",              "prompt": "high angle looking down, slightly above eye-level" },
+    { "title": "Bird's Eye",              "prompt": "bird's eye view, top-down" },
+    { "title": "Worm's Eye",              "prompt": "worm's eye view, extreme low angle looking straight up" },
+    { "title": "Dutch Angle",             "prompt": "dutch angle, camera tilted 15–20 degrees" },
+    { "title": "Over-the-Shoulder",       "prompt": "over-the-shoulder shot" }
+  ]
+}

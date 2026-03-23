@@ -1,0 +1,15 @@
+{
+  "label": "Lighting",
+  "ingredients": [
+    { "title": "Golden Hour",         "prompt": "warm golden hour sunlight from the side, long soft shadows, glowing highlights" },
+    { "title": "Blue Hour",           "prompt": "cool blue hour twilight, soft ambient diffused light, deep indigo shadows" },
+    { "title": "Harsh Midday Sun",    "prompt": "harsh overhead midday sunlight, hard shadows, high contrast" },
+    { "title": "Overcast Diffused",   "prompt": "overcast sky, flat soft diffused natural light, even exposure, no hard shadows" },
+    { "title": "Dramatic Side Light", "prompt": "single hard light source from the side, strong shadows, high contrast chiaroscuro" },
+    { "title": "Rembrandt",           "prompt": "Rembrandt lighting, soft key light at 45-degree angle, small triangle of light on shadow cheek" },
+    { "title": "Rim / Backlight",     "prompt": "rim backlight behind subject, glowing edge separation, dark foreground, silhouette" },
+    { "title": "Studio Softbox",      "prompt": "large studio softbox key light, clean even fill, soft shadows, controlled studio setup" },
+    { "title": "Neon Ambient",        "prompt": "neon ambient glow, mixed cool and warm artificial light, urban night atmosphere" },
+    { "title": "Candlelight",         "prompt": "warm candlelight, flickering orange glow, intimate low-key lighting, deep shadows" }
+  ]
+}

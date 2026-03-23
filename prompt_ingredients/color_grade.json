@@ -1,0 +1,15 @@
+{
+  "label": "Color Grade",
+  "ingredients": [
+    { "title": "Warm Vintage",          "prompt": "warm vintage color grade, lifted shadows, amber and golden highlights, faded blacks" },
+    { "title": "Teal & Orange",         "prompt": "teal and orange Hollywood color grade, warm skin tones against cool shadows" },
+    { "title": "Desaturated Matte",     "prompt": "desaturated matte color grade, low contrast, faded colors, lifted blacks" },
+    { "title": "High Contrast B&W",     "prompt": "high contrast black and white, deep blacks, bright whites, full tonal range" },
+    { "title": "Soft B&W",              "prompt": "soft low-contrast black and white, gentle greys, fine film grain" },
+    { "title": "Cold Cinematic Blue",   "prompt": "cold cinematic color grade, steely blue and grey tones, desaturated shadows" },
+    { "title": "Faded Kodak Film",      "prompt": "faded Kodak film color grade, slightly overexposed, warm highlights, gentle grain" },
+    { "title": "Bleach Bypass",         "prompt": "bleach bypass effect, reduced saturation, high contrast, retained silver halide look" },
+    { "title": "Vibrant & Saturated",   "prompt": "vibrant high-saturation color grade, punchy colors, deep blacks" },
+    { "title": "Cross-Processed",       "prompt": "cross-processed film look, shifted color channels, unexpected hues, high contrast" }
+  ]
+}

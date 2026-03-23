@@ -1,0 +1,15 @@
+{
+  "label": "Technical Specs",
+  "ingredients": [
+    { "title": "Kodak Portra 400",     "prompt": "shot on Kodak Portra 400, warm skin tones, fine grain, slightly overexposed" },
+    { "title": "Kodak Ektar 100",      "prompt": "shot on Kodak Ektar 100, vivid saturated colors, very fine grain, sharp" },
+    { "title": "Fujifilm Pro 400H",    "prompt": "shot on Fujifilm Pro 400H, cool pastel tones, soft highlights, subtle grain" },
+    { "title": "Ilford HP5 B&W",       "prompt": "shot on Ilford HP5 Plus 400, classic black and white, visible grain, high contrast" },
+    { "title": "Medium Format Digital","prompt": "medium format digital, Phase One, extreme detail and dynamic range, clean and clinical sharpness" },
+    { "title": "35mm Film — Heavy Grain", "prompt": "35mm film, heavy visible grain, slightly underexposed, raw and gritty texture" },
+    { "title": "Large Format Film",    "prompt": "large format 4x5 film, extraordinary detail, micro-sharp, subtle lens falloff at edges" },
+    { "title": "Digital Clean",        "prompt": "high-resolution digital photography, clean and noiseless, technically precise, sharp across frame" },
+    { "title": "Expired Film",         "prompt": "expired 35mm film, unpredictable color shifts, light leaks, faded and imperfect" },
+    { "title": "Super 8 / Lo-Fi",      "prompt": "Super 8 film aesthetic, 8mm, lo-fi grain and vignette, washed colours, analog warmth" }
+  ]
+}

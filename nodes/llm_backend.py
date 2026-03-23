@@ -11,12 +11,11 @@ OPENAI_MODELS = [
 
 ALL_MODELS = CLAUDE_MODELS + OPENAI_MODELS
 
+CLAUDE_THINKING_BUDGET = {"low": 1024, "medium": 5000, "high": 16000}
+
 
 class SD_LLMBackend:
     CATEGORY = "StudioDeep/Backends"
-
-    # budget_tokens for Claude extended thinking per effort level
-    CLAUDE_THINKING_BUDGET = {"low": 1024, "medium": 5000, "high": 16000}
 
     @classmethod
     def INPUT_TYPES(cls):

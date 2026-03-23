@@ -1,0 +1,15 @@
+{
+  "label": "Mood & Atmosphere",
+  "ingredients": [
+    { "title": "Melancholic",          "prompt": "melancholic and introspective mood, quiet solitude, heavy emotional weight" },
+    { "title": "Mysterious & Tense",   "prompt": "mysterious and tense atmosphere, sense of unease, dramatic shadows, suspenseful" },
+    { "title": "Serene & Peaceful",    "prompt": "serene and peaceful atmosphere, calm stillness, gentle and meditative" },
+    { "title": "Raw & Gritty",         "prompt": "raw and gritty atmosphere, unfiltered realism, rough textures, street-level energy" },
+    { "title": "Romantic & Intimate",  "prompt": "romantic and intimate mood, soft warmth, close connection, tender atmosphere" },
+    { "title": "Ethereal & Dreamlike", "prompt": "ethereal and dreamlike atmosphere, otherworldly softness, hazy and surreal" },
+    { "title": "Powerful & Bold",      "prompt": "powerful and commanding presence, strong energy, confident and imposing atmosphere" },
+    { "title": "Nostalgic",            "prompt": "nostalgic and warm atmosphere, reminiscent of the past, soft faded memory" },
+    { "title": "Eerie & Unsettling",   "prompt": "eerie and unsettling atmosphere, quiet dread, something feels slightly wrong" },
+    { "title": "Energetic & Dynamic",  "prompt": "energetic and dynamic atmosphere, sense of motion and momentum, vibrant tension" }
+  ]
+}

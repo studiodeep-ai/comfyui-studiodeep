@@ -1,0 +1,20 @@
+{
+  "label": "Image Type",
+  "ingredients": [
+    { "title": "Cinematic Film Still", "prompt": "cinematic film still" },
+    { "title": "Dramatic Photograph", "prompt": "dramatic photograph" },
+    { "title": "Moody Portrait", "prompt": "moody portrait" },
+    { "title": "Editorial Fashion", "prompt": "editorial fashion photograph" },
+    { "title": "Documentary", "prompt": "documentary photograph" },
+    { "title": "Fine Art", "prompt": "fine art photograph" },
+    { "title": "Street Photography", "prompt": "street photography" },
+    { "title": "Fashion Campaign", "prompt": "fashion campaign photograph" },
+    { "title": "Analog Film", "prompt": "analog film photograph" },
+    { "title": "Conceptual Art", "prompt": "conceptual art photograph" },
+    { "title": "Studio Portrait", "prompt": "studio portrait photograph" },
+    {
+      "title": "Commercial Product",
+      "prompt": "commercial product photography"
+    }
+  ]
+}

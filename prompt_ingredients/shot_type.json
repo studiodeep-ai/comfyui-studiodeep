@@ -1,0 +1,15 @@
+{
+  "label": "Shot Type",
+  "ingredients": [
+    { "title": "Extreme Close-Up",      "prompt": "extreme close-up" },
+    { "title": "Close-Up Portrait",     "prompt": "close-up portrait" },
+    { "title": "Bust Shot",             "prompt": "bust shot, framed at chest" },
+    { "title": "Medium Shot",           "prompt": "medium shot, framed at waist" },
+    { "title": "Cowboy Shot",           "prompt": "cowboy shot, framed at mid-thigh" },
+    { "title": "Three-Quarter Length",  "prompt": "three-quarter length shot" },
+    { "title": "Full Length",           "prompt": "full-length shot" },
+    { "title": "Wide Establishing",     "prompt": "wide establishing shot" },
+    { "title": "Overhead / Aerial",     "prompt": "overhead aerial shot looking straight down" },
+    { "title": "Two-Shot",              "prompt": "two-shot, both subjects in frame" }
+  ]
+}

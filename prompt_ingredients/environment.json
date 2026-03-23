@@ -1,0 +1,15 @@
+{
+  "label": "Environment",
+  "ingredients": [
+    { "title": "Minimalist Studio",       "prompt": "minimalist studio, seamless white or grey backdrop, clean and controlled" },
+    { "title": "Urban Street — Night",    "prompt": "wet urban street at night, city lights reflecting in puddles, distant traffic blur" },
+    { "title": "Brutalist Architecture",  "prompt": "brutalist concrete architecture, monumental raw concrete walls and columns" },
+    { "title": "Lush Forest",             "prompt": "dense lush forest, dappled light through forest canopy, green foliage surroundings" },
+    { "title": "Desert Landscape",        "prompt": "vast open desert landscape, cracked dry earth, minimal horizon, expansive sky" },
+    { "title": "Industrial Warehouse",    "prompt": "abandoned industrial warehouse, raw concrete, large steel windows, dusty shafts of light" },
+    { "title": "Luxury Interior",         "prompt": "high-end luxury interior, marble floors, large windows, refined minimalist decor" },
+    { "title": "Coastal / Seaside",       "prompt": "dramatic coastline, rocky cliffs, crashing ocean waves, open sky" },
+    { "title": "Rooftop Cityscape",       "prompt": "urban rooftop at dusk, city skyline in background, last light on the horizon" },
+    { "title": "Underground / Subway",    "prompt": "underground subway station, tiled walls, fluorescent lighting, motion-blurred trains" }
+  ]
+}
