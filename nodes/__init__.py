@@ -12,6 +12,7 @@ from .template_image            import NODE_CLASS_MAPPINGS as _tmpl_c,   NODE_DI
 from .prompt_ingredient         import NODE_CLASS_MAPPINGS as _pi_c,     NODE_DISPLAY_NAME_MAPPINGS as _pi_d
 from .string_template           import NODE_CLASS_MAPPINGS as _st_c,     NODE_DISPLAY_NAME_MAPPINGS as _st_d
 from .story_panel               import NODE_CLASS_MAPPINGS as _stp_c,    NODE_DISPLAY_NAME_MAPPINGS as _stp_d
+from .describer                 import NODE_CLASS_MAPPINGS as _desc_c,   NODE_DISPLAY_NAME_MAPPINGS as _desc_d
 
 NODE_CLASS_MAPPINGS = {
     **_llm_c,
@@ -28,6 +29,7 @@ NODE_CLASS_MAPPINGS = {
     **_pi_c,
     **_st_c,
     **_stp_c,
+    **_desc_c,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -45,4 +47,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     **_pi_d,
     **_st_d,
     **_stp_d,
+    **_desc_d,
 }
